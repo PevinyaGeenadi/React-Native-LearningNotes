@@ -24,6 +24,16 @@ export default function TabLayout() {
           ),
         }} 
       />
+      <Tabs.Screen 
+        name="gallery" 
+        options={{ 
+          title: "Gallery", 
+          headerShown: false, 
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="images-outline" color={color} size={size} />
+          ),
+        }} 
+      />
     </Tabs>
   );
 }

@@ -5,7 +5,7 @@ import { router } from "expo-router";
 export default function Index() {
   return (
     <View>
-      <Text style={styles.nametext}>index</Text>
+      <Text style={styles.nametext}>Home</Text>
       <TextInput style={styles.input} placeholder="Enter your name" />
       <Button 
             onPress={()=>router.push("profile")}
@@ -24,8 +24,9 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   nametext: {
-    fontSize: 30,
-    color: 'red',
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 50,
     marginTop: 50,
     marginLeft: 20,
   },
